@@ -38,7 +38,7 @@ async function pageLoad() {
     let t = await res.text();
     let o = JSON.parse(t);
     // alert(`<div class="title">${o.name}</div><div class="text">${o.value}</div>`)
-    divbox.innerHTML = `<div class="title">${o.name}</div><div class="text">${o.value}</div>`;
+    divbox.innerHTML = `<div class="title">${o.name}</div><div class="text">${o.value.replace(/\n/g,"<br />")}</div>`;
     // alert("should be didded!")
   }
 }
