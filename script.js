@@ -1,4 +1,4 @@
-const THISURL = "https://torpid-puddle-authority.glitch.me/";
+const THISURL = "https://paste.silabear.xyz/";
 
 async function processPaste() {
   document.getElementById("press").innerHTML =
